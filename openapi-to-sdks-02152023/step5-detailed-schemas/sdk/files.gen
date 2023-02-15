@@ -1,0 +1,11 @@
+pets.go
+sdk.go
+go.mod
+pkg/models/operations/addpet.go
+pkg/models/operations/deletepet.go
+pkg/models/operations/findpetbyid.go
+pkg/models/operations/findpets.go
+pkg/models/shared/pet.go
+pkg/models/shared/error.go
+pkg/models/shared/newpet.go
+USAGE.md

@@ -1,0 +1,8 @@
+sdk.go
+go.mod
+pkg/models/operations/getpets.go
+pkg/models/operations/getpetspetid.go
+pkg/models/operations/postpets.go
+pkg/models/shared/pet.go
+pkg/models/shared/error.go
+USAGE.md

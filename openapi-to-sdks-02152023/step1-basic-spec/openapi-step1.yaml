@@ -1,0 +1,48 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Petstore Example
+  license:
+    name: MIT
+servers:
+  - url: http://petstore.swagger.io/v1
+paths:
+  /pet:
+    post:
+      summary: Add a new pet to the store
+      description: Add a new pet to the store
+      requestBody:
+        description: Create a new pet in the store
+        content:
+          application/json:
+            schema:
+              schemas:
+                Pet:
+                  properties:
+                    id:
+                      type: integer
+                      format: int64
+                    name:
+                      type: string
+                    tag:
+                      type: string
+                  type: object
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                schemas:
+                  Pet:
+                    properties:
+                      id:
+                        type: integer
+                        format: int64
+                      name:
+                        type: string
+                      tag:
+                        type: string
+                    type: object
+        '405':
+          description: Invalid input
